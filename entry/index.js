@@ -3,6 +3,7 @@ import { render } from 'react-dom'
 import puffin, { Recomponent } from '@fratercula/puffin'
 import Nv from './nv'
 import antdPiffin from '../src'
+import Jsoner from './json'
 import schema from './schema'
 
 class Entry extends Component {
@@ -33,6 +34,7 @@ class Entry extends Component {
               : null
           }
         </div>
+        <Jsoner current={current} />
       </div>
     )
   }

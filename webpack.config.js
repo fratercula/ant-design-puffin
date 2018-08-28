@@ -13,7 +13,8 @@ const template = (type) => {
 <html>
 <head>
   <title> Antd Puffin </title>
-  <link href="//cdnjs.cloudflare.com/ajax/libs/antd/3.8.3/antd.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/antd/3.8.3/antd.min.css" rel="stylesheet" />
+  <link rel='stylesheet' href='//highlightjs.org/static/demo/styles/github.css'/>
 </head>
 <body style="width: 100vw; height: 100vh;">
   <div style="height: 100%;" id="root"></div>
