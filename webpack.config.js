@@ -1,4 +1,27 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 const { NODE_ENV: mode } = process.env
+const template = (type) => {
+  const cdn = `<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/react/16.4.2/umd/react.production.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.2/umd/react-dom.production.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/antd/3.8.3/antd.min.js"></script>
+  <script src="//unpkg.com/@fratercula/puffin"></script>
+  `
+
+  return `<!doctype html>
+<html>
+<head>
+  <title> Antd Puffin </title>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/antd/3.8.3/antd.min.css" rel="stylesheet">
+</head>
+<body style="width: 100vw; height: 100vh;">
+  <div style="height: 100%;" id="root"></div>
+${type === 'demo' ? cdn : ''}
+</body>
+</html>
+  `
+}
 
 const base = {
   mode: 'development',
@@ -86,6 +109,30 @@ if (mode === 'commonjs') {
     antd: 'commonjs antd',
     '@fratercula/puffin': 'commonjs @fratercula/puffin',
   }
+}
+
+if (mode === 'dev') {
+  base.plugins = [
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      templateContent: template(mode),
+    }),
+  ]
+}
+
+if (mode === 'demo') {
+  base.plugins = [
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      templateContent: template(mode),
+      minify: {
+        removeComments: true,
+        minifyJS: true,
+        minifyCSS: true,
+        collapseWhitespace: true,
+      },
+    }),
+  ]
 }
 
 module.exports = base

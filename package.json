@@ -1,11 +1,11 @@
 {
   "name": "@fratercula/ant-design-puffin",
   "version": "0.1.0",
-  "description": "puffin version of ant-design",
+  "description": "ant-design lite for Puffin",
   "unpkg": "dist/index.js",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=dev webpack-dev-server --hot --inline"
   },
   "repository": {
     "type": "git",
@@ -48,6 +48,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
+    "html-webpack-plugin": "^3.2.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "webpack": "^4.17.1",
