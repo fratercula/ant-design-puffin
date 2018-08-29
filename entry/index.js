@@ -27,7 +27,7 @@ class Entry extends Component {
     return (
       <div>
         <Nv onChange={this.onChange} />
-        <div style={{ marginLeft: 220, padding: 60 }}>
+        <div style={{ marginLeft: 220, padding: '90px 50px' }}>
           {
             current
               ? (<Recomponent {...schema[current]} />)

@@ -4,12 +4,6 @@ export default {
     {
       node: 'Progress',
       props: {
-        percent: 30,
-      },
-    },
-    {
-      node: 'Progress',
-      props: {
         percent: 50,
         status: 'active',
       },
@@ -24,12 +18,6 @@ export default {
     {
       node: 'Progress',
       props: {
-        percent: 100,
-      },
-    },
-    {
-      node: 'Progress',
-      props: {
         percent: 50,
         showInfo: false,
       },
@@ -37,30 +25,8 @@ export default {
     {
       node: 'Progress',
       props: {
-        size: 'small',
-        percent: 30,
-      },
-    },
-    {
-      node: 'Progress',
-      props: {
         percent: 30,
         type: 'circle',
-      },
-    },
-    {
-      node: 'Progress',
-      props: {
-        percent: 30,
-        type: 'circle',
-      },
-    },
-    {
-      node: 'Progress',
-      props: {
-        percent: 70,
-        type: 'circle',
-        status: 'exception',
       },
     },
     {
@@ -68,14 +34,6 @@ export default {
       props: {
         percent: 30,
         type: 'dashboard',
-      },
-    },
-    {
-      node: 'Progress',
-      props: {
-        percent: 30,
-        type: 'circle',
-        strokeLinecap: 'square',
       },
     },
   ],

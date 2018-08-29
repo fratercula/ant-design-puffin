@@ -29,46 +29,7 @@ export default {
         },
         {
           node: 'Divider',
-        },
-        {
-          node: 'p',
-          children: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        },
-        {
-          node: 'Divider',
           children: 'With Text',
-        },
-        {
-          node: 'p',
-          children: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        },
-        {
-          node: 'Divider',
-          props: {
-            dashed: true,
-          },
-        },
-        {
-          node: 'p',
-          children: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        },
-        {
-          node: 'Divider',
-          props: {
-            orientation: 'left',
-          },
-          children: 'Left Text',
-        },
-        {
-          node: 'p',
-          children: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        },
-        {
-          node: 'Divider',
-          props: {
-            orientation: 'right',
-          },
-          children: 'Right Text',
         },
         {
           node: 'p',
