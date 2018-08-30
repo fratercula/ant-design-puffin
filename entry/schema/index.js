@@ -7,8 +7,12 @@ import Tag from './tag'
 import Tabs from './tabs'
 import Button from './button'
 import Tooltip from './tooltip'
+import Table from './table'
+import Popover from './popover'
 
 export default {
+  Popover,
+  Table,
   Tooltip,
   Button,
   Divider,

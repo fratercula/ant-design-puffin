@@ -5,6 +5,7 @@ import {
   Icon,
   Tag,
   Button,
+  Table,
 } from 'antd'
 import component from './component'
 
@@ -16,4 +17,5 @@ export default {
   Icon,
   Tag,
   Button,
+  Table,
 }
