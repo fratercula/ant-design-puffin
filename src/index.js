@@ -4,7 +4,6 @@ import {
   Alert,
   Icon,
   Tag,
-  // Tooltip,
   Button,
 } from 'antd'
 import component from './component'
@@ -16,6 +15,5 @@ export default {
   Alert,
   Icon,
   Tag,
-  // Tooltip,
   Button,
 }
