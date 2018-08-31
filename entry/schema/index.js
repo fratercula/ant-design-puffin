@@ -9,8 +9,18 @@ import Button from './button'
 import Tooltip from './tooltip'
 import Table from './table'
 import Popover from './popover'
+import List from './list'
+import Avatar from './avatar'
+import Card from './card'
+import Badge from './badge'
+import Carousel from './carousel'
 
 export default {
+  Carousel,
+  Badge,
+  Card,
+  Avatar,
+  List,
   Popover,
   Table,
   Tooltip,

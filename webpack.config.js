@@ -106,7 +106,6 @@ if (mode === 'demo' || mode === 'umd') {
 if (mode === 'commonjs') {
   base.externals = {
     react: 'commonjs react',
-    'react-dom': 'commonjs reactDom',
     antd: 'commonjs antd',
     '@fratercula/puffin': 'commonjs @fratercula/puffin',
   }

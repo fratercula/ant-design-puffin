@@ -6,6 +6,11 @@ import {
   Tag,
   Button,
   Table,
+  List,
+  Avatar,
+  Card,
+  Badge,
+  Carousel,
 } from 'antd'
 import component from './component'
 
@@ -18,4 +23,9 @@ export default {
   Tag,
   Button,
   Table,
+  List,
+  Avatar,
+  Card,
+  Badge,
+  Carousel,
 }
