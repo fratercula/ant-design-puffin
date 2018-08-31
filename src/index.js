@@ -11,11 +11,17 @@ import {
   Card,
   Badge,
   Carousel,
+  Rate,
+  Breadcrumb,
+  Affix,
+  Row,
+  Col,
 } from 'antd'
 import component from './component'
 
 export default {
   ...component,
+  Affix,
   Divider,
   Progress,
   Alert,
@@ -28,4 +34,8 @@ export default {
   Card,
   Badge,
   Carousel,
+  Rate,
+  Breadcrumb,
+  Row,
+  Col,
 }
