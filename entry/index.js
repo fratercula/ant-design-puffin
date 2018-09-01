@@ -7,8 +7,6 @@ import Jsoner from './json'
 import schema from './schema'
 
 class Entry extends Component {
-  parse = false
-
   state = {
     current: Object.keys(schema)[0],
   }
