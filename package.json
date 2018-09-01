@@ -1,9 +1,13 @@
 {
   "name": "@fratercula/ant-design-puffin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ant Design for Puffin",
   "unpkg": "dist/index.js",
   "main": "lib/index.js",
+  "files": [
+    "dist",
+    "lib"
+  ],
   "scripts": {
     "start": "NODE_ENV=dev webpack-dev-server --hot --inline",
     "build:umd": "NODE_ENV=umd webpack --hide-modules --progress --colors",
