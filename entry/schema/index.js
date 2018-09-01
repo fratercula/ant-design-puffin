@@ -16,14 +16,14 @@ import Badge from './badge'
 import Carousel from './carousel'
 import Collapse from './collapse'
 import Rate from './rate'
-import Breadcrumb from './breadcrumb'
 import Affix from './affix'
 import Grid from './grid'
+import Steps from './steps'
 
 export default {
+  Steps,
   Grid,
   Affix,
-  Breadcrumb,
   Rate,
   Collapse,
   Carousel,

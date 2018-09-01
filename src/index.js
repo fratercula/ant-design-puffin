@@ -1,41 +1,7 @@
-import {
-  Divider,
-  Progress,
-  Alert,
-  Icon,
-  Tag,
-  Button,
-  Table,
-  List,
-  Avatar,
-  Card,
-  Badge,
-  Carousel,
-  Rate,
-  Breadcrumb,
-  Affix,
-  Row,
-  Col,
-} from 'antd'
+import * as antd from 'antd'
 import component from './component'
 
 export default {
+  ...antd,
   ...component,
-  Affix,
-  Divider,
-  Progress,
-  Alert,
-  Icon,
-  Tag,
-  Button,
-  Table,
-  List,
-  Avatar,
-  Card,
-  Badge,
-  Carousel,
-  Rate,
-  Breadcrumb,
-  Row,
-  Col,
 }
