@@ -5,7 +5,12 @@
   "unpkg": "dist/index.js",
   "main": "lib/index.js",
   "scripts": {
-    "start": "NODE_ENV=dev webpack-dev-server --hot --inline"
+    "start": "NODE_ENV=dev webpack-dev-server --hot --inline",
+    "build:umd": "NODE_ENV=umd webpack --hide-modules --progress --colors",
+    "build:commonjs": "NODE_ENV=commonjs webpack --hide-modules --progress --colors",
+    "build:demo": "rm -rf docs && NODE_ENV=demo webpack --hide-modules --progress --colors",
+    "build": "npm run build:umd && npm run build:commonjs && npm run build:demo",
+    "lint": "eslint ./src --fix"
   },
   "repository": {
     "type": "git",
@@ -25,8 +30,8 @@
   "homepage": "https://github.com/fratercula/ant-design-puffin#readme",
   "peerDependencies": {
     "@fratercula/puffin": "*",
-    "antd": "^3.8.3",
-    "react": "^16.4.2"
+    "antd": ">=3.8.1",
+    "react": ">=16.4.0"
   },
   "dependencies": {
     "prop-types": "^15.6.2"

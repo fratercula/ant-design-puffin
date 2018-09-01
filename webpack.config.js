@@ -7,6 +7,7 @@ const template = (type) => {
   <script src="//cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.2/umd/react-dom.production.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/antd/3.8.3/antd.min.js"></script>
   <script src="//unpkg.com/@fratercula/puffin"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   `
 
   return `<!doctype html>
@@ -59,7 +60,7 @@ if (mode === 'umd' || mode === 'demo') {
 }
 
 if (mode === 'umd' || mode === 'commonjs') {
-  base.entry = './src'
+  base.entry = './src/index.js'
 }
 
 if (mode === 'demo') {
@@ -94,10 +95,19 @@ if (mode === 'commonjs') {
   base.devtool = false
 }
 
-if (mode === 'demo' || mode === 'umd') {
+if (mode === 'demo') {
   base.externals = {
     react: 'React',
     'react-dom': 'ReactDOM',
+    antd: 'antd',
+    'highlight.js': 'hljs',
+    '@fratercula/puffin': 'puffin',
+  }
+}
+
+if (mode === 'umd') {
+  base.externals = {
+    react: 'React',
     antd: 'antd',
     '@fratercula/puffin': 'puffin',
   }
