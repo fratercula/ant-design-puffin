@@ -1,13 +1,3 @@
-# ant-design-puffin
+# Ant Design Puffin
 
-### Setps
-
-progressDot 不支持
-
-### Popover Tooltip
-
-需要手动设置 display: block
-
-### Tabs Coolapse
-
-defaultKeys 数组元素为数字
+[中文 README](README-zh_CN.md)

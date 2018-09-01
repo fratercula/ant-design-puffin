@@ -1,7 +1,7 @@
 {
   "name": "@fratercula/ant-design-puffin",
   "version": "0.1.0",
-  "description": "ant-design lite for Puffin",
+  "description": "Ant Design for Puffin",
   "unpkg": "dist/index.js",
   "main": "lib/index.js",
   "scripts": {
