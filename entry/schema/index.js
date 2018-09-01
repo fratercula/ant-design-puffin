@@ -19,8 +19,10 @@ import Rate from './rate'
 import Affix from './affix'
 import Grid from './grid'
 import Steps from './steps'
+import View from './view'
 
 export default {
+  View,
   Steps,
   Grid,
   Affix,

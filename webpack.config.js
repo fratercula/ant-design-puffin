@@ -14,6 +14,7 @@ const template = (type) => {
 <html>
 <head>
   <title> Antd Puffin </title>
+  <meta charset="utf-8" />
   <link href="//cdnjs.cloudflare.com/ajax/libs/antd/3.8.3/antd.min.css" rel="stylesheet" />
   <link rel='stylesheet' href='//highlightjs.org/static/demo/styles/github.css'/>
 </head>
@@ -48,6 +49,28 @@ const base = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
+      },
+      {
+        test: /\.less$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'style-loader',
+            options: { sourceMap: true },
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+              modules: true,
+              localIdentName: '[local]___[hash:base64:5]',
+            },
+          },
+          {
+            loader: 'less-loader',
+            options: { sourceMap: true },
+          },
+        ],
       },
     ],
   },

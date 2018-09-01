@@ -1,0 +1,36 @@
+.view {
+  background: #fff;
+}
+.header {
+  color: #444;
+  font-size: 16px;
+
+  & > * {
+    padding: 14px 20px;
+    border-bottom: 1px solid #eee;
+  }
+}
+.box {
+  padding: 20px 10px;
+}
+.cell {
+  padding: 10px;
+  color: #666;
+  margin: 5px 0;
+}
+.label {
+  display: table-cell;
+  white-space: nowrap;
+  vertical-align: top;
+
+  &::after {
+    content: ':';
+    margin: 0 5px 0 3px;
+  }
+}
+.value {
+  vertical-align: top;
+  display: table-cell;
+  color: #777;
+  word-break: break-all;
+}

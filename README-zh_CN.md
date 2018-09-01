@@ -41,3 +41,7 @@ render(<Recomponent {...schema} />, document.getElementById('root'))
 - Tooltip: 设置样式 `display: block` 如果需要
 - Tabs: `defaultActiveKey` 的值是数字，对应子元素的数组索引
 - Coolapse: `defaultActiveKey` 为数组，数组元素为数字，也是对应子元素索引
+
+### 添加的组件
+
+- View: 卡片类型信息展示
