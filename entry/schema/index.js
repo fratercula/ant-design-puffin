@@ -20,8 +20,27 @@ import Affix from './affix'
 import Grid from './grid'
 import Steps from './steps'
 import View from './view'
+import BackTop from './backtop'
+import Anchor from './anchor'
+import Pagination from './pagination'
+import TimePicker from './timepicker'
+import AutoComplete from './autocomplete'
+import Cascader from './cascader'
+import Checkbox from './checkbox'
+import DatePicker from './datepicker'
+import Input from './input'
+import InputNumber from './inputnumber'
+import Radio from './radio'
+import Select from './select'
 
 const data = {
+  Select,
+  Radio,
+  InputNumber,
+  Input,
+  Checkbox,
+  Cascader,
+  AutoComplete,
   View,
   Steps,
   Grid,
@@ -44,17 +63,11 @@ const data = {
   Icon,
   Tag,
   Tabs,
-  Pagination: {
-    node: 'Pagination',
-    props: {
-      showQuickJumper: true,
-      defaultCurrent: 2,
-      total: 100,
-    },
-  },
-  RangePicker: {
-    node: 'DatePicker.RangePicker',
-  },
+  BackTop,
+  Anchor,
+  Pagination,
+  TimePicker,
+  DatePicker,
 }
 
 const schema = {}

@@ -34,6 +34,14 @@ const schema = {
 render(<Recomponent {...schema} />, document.getElementById('root'))
 ```
 
+### 未测试组件（可能不能直接支持组件）
+
+- Layout
+- Dropdown
+- Menu
+- Form
+- Mention
+
 ### 特殊组件说明
 
 - Setps: `progressDot` 不支持
