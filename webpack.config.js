@@ -1,11 +1,13 @@
+const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const { NODE_ENV: mode } = process.env
 const template = (type) => {
   const cdn = `<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/zh-cn.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/react/16.4.2/umd/react.production.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.2/umd/react-dom.production.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/antd/3.8.3/antd.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/antd/3.9.1/antd.min.js"></script>
   <script src="//unpkg.com/@fratercula/puffin"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   `
@@ -15,7 +17,7 @@ const template = (type) => {
 <head>
   <title> Antd Puffin </title>
   <meta charset="utf-8" />
-  <link href="//cdnjs.cloudflare.com/ajax/libs/antd/3.8.3/antd.min.css" rel="stylesheet" />
+  <link href="//cdnjs.cloudflare.com/ajax/libs/antd/3.9.1/antd.min.css" rel="stylesheet" />
   <link rel='stylesheet' href='//highlightjs.org/static/demo/styles/github.css'/>
 </head>
 <body style="width: 100vw; height: 100vh;">
@@ -165,6 +167,7 @@ if (mode === 'demo') {
         collapseWhitespace: true,
       },
     }),
+    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
   ]
 }
 

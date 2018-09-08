@@ -29,6 +29,7 @@ export default {
                     margin: '0 3px',
                   },
                   type: 'question-circle',
+                  theme: 'filled',
                 },
               },
             },

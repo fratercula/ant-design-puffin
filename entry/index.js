@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 import puffin, { Recomponent } from '@fratercula/puffin'
+import { LocaleProvider } from 'antd'
+import moment from 'moment'
+import 'moment/locale/zh-cn'
+import zhCN from 'antd/lib/locale-provider/zh_CN'
 import Nv from './nv'
 import antdPiffin from '../src'
 import Jsoner from './json'
 import schema from './schema'
+
+moment.locale('zh-cn')
 
 class Entry extends Component {
   state = {
@@ -26,11 +32,13 @@ class Entry extends Component {
       <div>
         <Nv onChange={this.onChange} />
         <div style={{ marginLeft: 220, padding: '90px 50px' }}>
-          {
-            current
-              ? (<Recomponent {...schema[current]} />)
-              : null
-          }
+          <LocaleProvider locale={zhCN}>
+            {
+              current
+                ? (<Recomponent {...schema[current]} />)
+                : null
+            }
+          </LocaleProvider>
         </div>
         <Jsoner current={current} />
       </div>

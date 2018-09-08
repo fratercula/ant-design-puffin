@@ -34,7 +34,7 @@
   "homepage": "https://github.com/fratercula/ant-design-puffin#readme",
   "peerDependencies": {
     "@fratercula/puffin": "*",
-    "antd": ">=3.8.1",
+    "antd": ">=3.9.1",
     "react": ">=16.4.0"
   },
   "dependencies": {
@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@fratercula/puffin": "^0.1.3",
-    "antd": "^3.8.3",
+    "antd": "^3.9.1",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
     "babel-loader": "^7.1.5",

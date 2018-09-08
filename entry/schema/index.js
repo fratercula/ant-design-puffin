@@ -21,7 +21,7 @@ import Grid from './grid'
 import Steps from './steps'
 import View from './view'
 
-export default {
+const data = {
   View,
   Steps,
   Grid,
@@ -44,4 +44,25 @@ export default {
   Icon,
   Tag,
   Tabs,
+  Pagination: {
+    node: 'Pagination',
+    props: {
+      showQuickJumper: true,
+      defaultCurrent: 2,
+      total: 100,
+    },
+  },
+  RangePicker: {
+    node: 'DatePicker.RangePicker',
+  },
 }
+
+const schema = {}
+
+Object.keys(data)
+  .sort()
+  .forEach((key) => {
+    schema[key] = data[key]
+  })
+
+export default schema
