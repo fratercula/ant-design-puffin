@@ -32,8 +32,14 @@ import Input from './input'
 import InputNumber from './inputnumber'
 import Radio from './radio'
 import Select from './select'
+import Skeleton from './skeleton'
+import Switch from './switch'
+import Slider from './slider'
 
 const data = {
+  Slider,
+  Switch,
+  Skeleton,
   Select,
   Radio,
   InputNumber,

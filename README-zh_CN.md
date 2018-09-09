@@ -34,13 +34,23 @@ const schema = {
 render(<Recomponent {...schema} />, document.getElementById('root'))
 ```
 
-### 未测试组件（可能不能直接支持组件）
+### 未测试组件（可能不能直接支持，或者非表现类组件）
 
 - Layout
 - Dropdown
 - Menu
 - Form
 - Mention
+- TreeSelect
+- Tree
+- Transfer
+- Upload
+- Drawer
+- Modal
+- Message
+- Notification
+- Popconfirm
+- Spin
 
 ### 特殊组件说明
 
