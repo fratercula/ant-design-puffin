@@ -39,7 +39,6 @@ render(<Recomponent {...schema} />, document.getElementById('root'))
 - Layout
 - Dropdown
 - Menu
-- Form
 - Mention
 - TreeSelect
 - Tree

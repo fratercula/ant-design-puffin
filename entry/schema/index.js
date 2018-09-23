@@ -35,8 +35,10 @@ import Select from './select'
 import Skeleton from './skeleton'
 import Switch from './switch'
 import Slider from './slider'
+import Form from './form'
 
 const data = {
+  Form,
   Slider,
   Switch,
   Skeleton,
